@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SnippetSprout — Learn Without Limits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/home-dashboard.css" />
+  <link rel="stylesheet" href="css/courses.css" />
+  <link rel="stylesheet" href="css/my-learning.css" />
+  <link rel="stylesheet" href="css/video-player.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     NAVIGATION
+══════════════════════════════ -->
+<nav>
+  <div class="logo">SnippetSprout<span>.</span></div>
+  <ul class="nav-links">
+    <li><a onclick="showPage('home')" id="nav-home" class="active">Dashboard</a></li>
+    <li><a onclick="showPage('courses')" id="nav-courses">Courses</a></li>
+    <li><a onclick="showPage('learning')" id="nav-learning">My Learning</a></li>
+    <li><a onclick="showPage('watch')" id="nav-watch">&#9654; Watch</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="avatar">Z</div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════
+     PAGE: HOME / DASHBOARD
+══════════════════════════════ -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero-content">
+      <div class="greeting">&#128075; Good morning, Zalak</div>
+      <h1>Ready to<br><em>expand your mind</em><br>today?</h1>
+      <p class="hero-sub">You've been on a 7-day streak. Keep it up — you're in the top 12% of learners this week.</p>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-num">7</div><div class="stat-label">Day Streak &#128293;</div></div>
+        <div class="stat"><div class="stat-num">4</div><div class="stat-label">Courses Enrolled</div></div>
+        <div class="stat"><div class="stat-num">38h</div><div class="stat-label">Total Watch Time</div></div>
+        <div class="stat"><div class="stat-num">3</div><div class="stat-label">Certificates Earned</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-grid">
+    <div>
+      <div class="section-title">Continue Learning</div>
+
+      <div class="continue-card" onclick="showPage('watch')">
+        <div class="continue-thumb">
+          <div class="thumb-gradient g1"></div>
+          <div class="thumb-label">Design</div>
+          <div class="play-btn">&#9654;</div>
+        </div>
+        <div class="continue-body">
+          <h3>UI/UX Design Masterclass: Zero to Hero</h3>
+          <p>Lesson 12 of 34 — Prototyping &amp; User Flows</p>
+          <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:35%"></div></div>
+          <div class="progress-label"><span>35% complete</span><span>~4h left</span></div>
+        </div>
+      </div>
+
+      <div class="continue-card" onclick="showPage('watch')">
+        <div class="continue-thumb">
+          <div class="thumb-gradient g2"></div>
+          <div class="thumb-label">Development</div>
+          <div class="play-btn">&#9654;</div>
+        </div>
+        <div class="continue-body">
+          <h3>Full Stack Web Development Bootcamp</h3>
+          <p>Lesson 28 of 60 — REST APIs &amp; Express.js</p>
+          <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:47%"></div></div>
+          <div class="progress-label"><span>47% complete</span><span>~9h left</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title">Weekly Goal</div>
+      <div class="widget">
+        <div class="goal-ring-wrap">
+          <div class="goal-ring">
+            <svg viewBox="0 0 90 90" width="90" height="90">
+              <circle class="ring-bg" cx="45" cy="45" r="35"/>
+              <circle class="ring-fill" cx="45" cy="45" r="35"/>
+            </svg>
+            <div class="goal-ring-label">
+              <span>5h</span>
+              <span>of 7h</span>
+            </div>
+          </div>
+          <div class="goal-info">
+            <h4>72% of goal</h4>
+            <p>2 more hours to hit your weekly target!</p>
+          </div>
+        </div>
+        <div class="day-dots">
+          <div class="day-dot done">M</div>
+          <div class="day-dot done">T</div>
+          <div class="day-dot done">W</div>
+          <div class="day-dot done">T</div>
+          <div class="day-dot today">F</div>
+          <div class="day-dot">S</div>
+          <div class="day-dot">S</div>
+        </div>
+      </div>
+
+      <div class="section-title">Achievements</div>
+      <div class="widget">
+        <div class="badges">
+          <div class="badge-row">
+            <div class="badge-icon gold">&#127942;</div>
+            <div class="badge-text"><h5>Course Completionist</h5><p>Finished 3+ full courses</p></div>
+          </div>
+          <div class="badge-row">
+            <div class="badge-icon blue">&#9889;</div>
+            <div class="badge-text"><h5>Fast Learner</h5><p>Completed a course in 3 days</p></div>
+          </div>
+          <div class="badge-row">
+            <div class="badge-icon green">&#128293;</div>
+            <div class="badge-text"><h5>7-Day Streak</h5><p>Learned every day this week</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-title">Recommended</div>
+      <div class="widget">
+        <div class="rec-item">
+          <div class="rec-icon" style="background:linear-gradient(135deg,#1a2a3a,#0a1a2a)">&#129504;</div>
+          <div class="rec-info"><h5>Prompt Engineering for Devs</h5><p>4.9 &#9733; &middot; 2,400 students</p></div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-icon" style="background:linear-gradient(135deg,#3a1a1a,#2a0a0a)">&#128241;</div>
+          <div class="rec-info"><h5>iOS Dev with SwiftUI</h5><p>4.8 &#9733; &middot; 8,700 students</p></div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-icon" style="background:linear-gradient(135deg,#1a3a2a,#0a2a1a)">&#128202;</div>
+          <div class="rec-info"><h5>Advanced SQL &amp; Analytics</h5><p>4.7 &#9733; &middot; 5,200 students</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     PAGE: COURSES
+══════════════════════════════ -->
+<div class="page" id="page-courses">
+  <div class="courses-header">
+    <h2>Explore Courses</h2>
+    <p>Discover thousands of expert-led courses to accelerate your career.</p>
+    <div class="search-bar">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" id="search-input" placeholder="Search courses, topics, instructors..." oninput="searchCourses(this.value)" />
+    </div>
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCourses('all', this)">All</button>
+      <button class="filter-btn" onclick="filterCourses('design', this)">Design</button>
+      <button class="filter-btn" onclick="filterCourses('dev', this)">Development</button>
+      <button class="filter-btn" onclick="filterCourses('data', this)">Data Science</button>
+      <button class="filter-btn" onclick="filterCourses('business', this)">Business</button>
+      <button class="filter-btn" onclick="filterCourses('ai', this)">AI &amp; ML</button>
+    </div>
+  </div>
+  <div class="courses-grid" id="courses-grid"></div>
+</div>
+
+<!-- ══════════════════════════════
+     PAGE: MY LEARNING
+══════════════════════════════ -->
+<div class="page" id="page-learning">
+  <div class="learning-wrap">
+    <h1 class="page-headline">My Learning</h1>
+    <p class="page-subtitle">Track your progress and celebrate your wins.</p>
+
+    <div class="progress-overview">
+      <div class="stat-card"><div class="stat-icon">&#128218;</div><div class="stat-num">4</div><div class="stat-label">Enrolled Courses</div></div>
+      <div class="stat-card"><div class="stat-icon">&#9989;</div><div class="stat-num">3</div><div class="stat-label">Completed</div></div>
+      <div class="stat-card"><div class="stat-icon">&#9201;</div><div class="stat-num">38h</div><div class="stat-label">Hours Learned</div></div>
+      <div class="stat-card"><div class="stat-icon">&#127894;</div><div class="stat-num">3</div><div class="stat-label">Certificates</div></div>
+    </div>
+
+    <div class="section-title">Active Courses</div>
+    <div class="enrolled-list">
+      <div class="enrolled-item" onclick="showPage('watch')">
+        <div class="enrolled-icon" style="background:linear-gradient(135deg,#1e3a5f,#0f2a45)">&#127912;</div>
+        <div class="enrolled-info">
+          <h4>UI/UX Design Masterclass</h4>
+          <p>Instructor: Sarah Chen &middot; 34 lessons</p>
+          <div class="progress-details">
+            <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:35%"></div></div>
+            <span class="progress-pct">35%</span>
+          </div>
+        </div>
+        <div class="enrolled-cta">
+          <span class="status-pill pill-active">Active</span>
+          <button class="btn btn-primary sm">Continue</button>
+        </div>
+      </div>
+
+      <div class="enrolled-item" onclick="showPage('watch')">
+        <div class="enrolled-icon" style="background:linear-gradient(135deg,#3d1a4a,#1a0a2e)">&#128187;</div>
+        <div class="enrolled-info">
+          <h4>Full Stack Web Development Bootcamp</h4>
+          <p>Instructor: Marcus Reid &middot; 60 lessons</p>
+          <div class="progress-details">
+            <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:47%"></div></div>
+            <span class="progress-pct">47%</span>
+          </div>
+        </div>
+        <div class="enrolled-cta">
+          <span class="status-pill pill-active">Active</span>
+          <button class="btn btn-primary sm">Continue</button>
+        </div>
+      </div>
+
+      <div class="enrolled-item">
+        <div class="enrolled-icon" style="background:linear-gradient(135deg,#1a3a2a,#0a2a1a)">&#128202;</div>
+        <div class="enrolled-info">
+          <h4>Data Science with Python</h4>
+          <p>Instructor: Priya Nair &middot; 45 lessons</p>
+          <div class="progress-details">
+            <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:100%; background:var(--green)"></div></div>
+            <span class="progress-pct" style="color:var(--green)">100%</span>
+          </div>
+        </div>
+        <div class="enrolled-cta">
+          <span class="status-pill pill-done">Completed</span>
+          <button class="btn btn-outline sm">Certificate</button>
+        </div>
+      </div>
+
+      <div class="enrolled-item">
+        <div class="enrolled-icon" style="background:linear-gradient(135deg,#4a2a1a,#2a1a0a)">&#129302;</div>
+        <div class="enrolled-info">
+          <h4>Machine Learning A&ndash;Z</h4>
+          <p>Instructor: Alex Kim &middot; 52 lessons</p>
+          <div class="progress-details">
+            <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:12%"></div></div>
+            <span class="progress-pct">12%</span>
+          </div>
+        </div>
+        <div class="enrolled-cta">
+          <span class="status-pill pill-paused">Paused</span>
+          <button class="btn btn-outline sm">Resume</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">Learning Activity — Past 16 Weeks</div>
+    <div class="heatmap-wrap">
+      <div class="heatmap-grid" id="heatmap"></div>
+      <div class="heatmap-legend">
+        <span>Less</span>
+        <div class="heatmap-legend-cells">
+          <div class="heatmap-cell"></div>
+          <div class="heatmap-cell h1"></div>
+          <div class="heatmap-cell h2"></div>
+          <div class="heatmap-cell h3"></div>
+          <div class="heatmap-cell h4"></div>
+        </div>
+        <span>More</span>
+      </div>
+    </div>
+
+    <div class="section-title" style="margin-top:2rem">Certificates</div>
+    <div class="certs-grid">
+      <div class="cert-card">
+        <div class="cert-icon">&#127891;</div>
+        <div class="cert-info"><h4>Python for Data Science</h4><p>Issued Jan 2025 &middot; SnippetSprout Certified</p></div>
+        <button class="btn btn-outline sm" onclick="showToast('&#128229; Downloading certificate...')">Download</button>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">&#127891;</div>
+        <div class="cert-info"><h4>JavaScript Fundamentals</h4><p>Issued Nov 2024 &middot; SnippetSprout Certified</p></div>
+        <button class="btn btn-outline sm" onclick="showToast('&#128229; Downloading certificate...')">Download</button>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">&#127891;</div>
+        <div class="cert-info"><h4>Product Design Basics</h4><p>Issued Sep 2024 &middot; SnippetSprout Certified</p></div>
+        <button class="btn btn-outline sm" onclick="showToast('&#128229; Downloading certificate...')">Download</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     PAGE: WATCH (Video Player)
+══════════════════════════════ -->
+<div class="page" id="page-watch">
+  <div class="watch-wrap">
+    <div>
+      <div class="video-player-wrap">
+        <div class="video-embed">
+          <iframe
+            id="ytFrame"
+            src="https://www.youtube.com/embed/c9Wg6Cb_YlU?rel=0&modestbranding=1"
+            allowfullscreen
+            title="Course Video">
+          </iframe>
+        </div>
+
+        <div class="video-info">
+          <h2>Lesson 12: Prototyping &amp; User Flows in Figma</h2>
+          <p>Learn how to build interactive prototypes and map complete user journeys directly inside Figma.</p>
+
+          <div class="video-meta-row">
+            <span>&#128100; <strong>Sarah Chen</strong></span>
+            <span>&#9201; <strong>24:38</strong></span>
+            <span>&#128065; <strong>12,400 views</strong></span>
+            <span>&#128197; <strong>Jan 2025</strong></span>
+          </div>
+
+          <div class="video-actions">
+            <button class="btn btn-primary" onclick="showToast('&#9989; Marked as complete!')">Mark Complete</button>
+            <button class="btn btn-outline" onclick="showToast('&#128278; Bookmarked!')">Bookmark</button>
+            <button class="btn btn-outline" onclick="showToast('&#128279; Link copied!')">Share</button>
+          </div>
+
+          <div class="tabs">
+            <button class="tab active" onclick="switchTab('overview', this)">Overview</button>
+            <button class="tab" onclick="switchTab('notes', this)">Notes</button>
+            <button class="tab" onclick="switchTab('resources', this)">Resources</button>
+            <button class="tab" onclick="switchTab('qa', this)">Q&amp;A</button>
+          </div>
+
+          <div class="tab-content active" id="tab-overview">
+            <p>In this lesson, you'll discover how prototyping bridges the gap between static mockups and real user experiences. We explore auto-animate, smart animate, and how to create scrollable frames that feel native on any device. By the end, you'll have a fully clickable prototype ready for user testing.</p>
+            <h5 style="margin-top:1rem; margin-bottom:0.5rem; color:var(--gold)">What you'll learn</h5>
+            <ul class="overview-list">
+              <li>&#10003; Build interactive prototypes from scratch in Figma</li>
+              <li>&#10003; Use Auto-Animate for smooth transitions</li>
+              <li>&#10003; Create scrollable frames and overlay components</li>
+              <li>&#10003; Export and share prototypes for user testing</li>
+            </ul>
+          </div>
+
+          <div class="tab-content" id="tab-notes">
+            <div class="notes-box">
+              <div class="notes-label">&#128221; Your Notes</div>
+              <textarea id="notepad" placeholder="Add notes for this lesson..."></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="saveNote()">Save Note</button>
+            <div id="saved-notes" class="saved-notes"></div>
+          </div>
+
+          <div class="tab-content" id="tab-resources">
+            <div class="resource-list">
+              <a class="resource-item" href="#" onclick="showToast('&#128196; Downloading slides...')">&#128196; Lesson Slides (PDF)</a>
+              <a class="resource-item" href="#" onclick="showToast('&#127912; Opening Figma file...')">&#127912; Figma Starter File</a>
+              <a class="resource-item" href="#" onclick="showToast('&#128218; Opening reading list...')">&#128218; Further Reading List</a>
+              <a class="resource-item" href="#" onclick="showToast('&#128190; Downloading assets...')">&#128190; Design Assets ZIP</a>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab-qa">
+            <div class="qa-list" id="qa-list">
+              <div class="qa-item">
+                <div class="qa-avatar">JS</div>
+                <div class="qa-body">
+                  <h6>Jatin Sharma <span>2 days ago</span></h6>
+                  <p>How do I share a prototype link with someone who doesn't have Figma?</p>
+                  <div class="qa-reply">&#128204; Instructor replied: You can share a "View only" link — no Figma account needed!</div>
+                </div>
+              </div>
+              <div class="qa-item">
+                <div class="qa-avatar">RM</div>
+                <div class="qa-body">
+                  <h6>Riya Mehta <span>4 days ago</span></h6>
+                  <p>Does Auto-Animate work between different frames or only the same frame?</p>
+                  <div class="qa-reply">&#128204; Instructor replied: Auto-Animate works between frames that share matching layer names!</div>
+                </div>
+              </div>
+            </div>
+            <div class="qa-input-wrap">
+              <input type="text" id="qa-input" placeholder="Ask a question..." />
+              <button class="btn btn-primary" onclick="postQuestion()">Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="playlist">
+        <div class="playlist-header">
+          <h4>UI/UX Design Masterclass</h4>
+          <p>Section 3: Prototyping Fundamentals</p>
+          <div class="playlist-progress">
+            <div class="progress-bar-wrap" style="margin:0.5rem 0 0.25rem"><div class="progress-bar-fill" style="width:37.5%"></div></div>
+            <span>3 / 8 lessons complete</span>
+          </div>
+        </div>
+        <div id="playlist-items"></div>
+      </div>
+
+      <div class="instructor-card">
+        <div class="instructor-avatar">SC</div>
+        <div class="instructor-info">
+          <h5>Sarah Chen</h5>
+          <p>Senior UX Designer &middot; Google</p>
+          <div class="instructor-stats">
+            <span>&#11088; 4.9</span>
+            <span>&#128101; 42K students</span>
+            <span>&#127909; 6 courses</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-rights">
+  &copy; 2026 Zalak. All rights reserved.
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <span class="toast-icon">&#127881;</span>
+  <span id="toast-msg">Action completed!</span>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/courses.js"></script>
+<script src="js/my-learning.js"></script>
+<script src="js/video-player.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

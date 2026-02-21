@@ -1,0 +1,20 @@
+﻿@media (max-width: 900px) {
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .watch-wrap     { grid-template-columns: 1fr; }
+  .progress-overview { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .nav-links  { display: none; }
+  .hero-stats { gap: 1.5rem; }
+
+  .enrolled-item {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .enrolled-cta { display: none; }
+
+  .video-meta-row { gap: 0.75rem; }
+
+  .progress-overview { grid-template-columns: repeat(2, 1fr); }
+}

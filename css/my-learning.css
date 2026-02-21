@@ -1,0 +1,171 @@
+﻿.learning-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Stats overview */
+.progress-overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.stat-card:hover { transform: translateY(-2px); border-color: rgba(232,169,48,0.3); }
+
+.stat-card .stat-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+.stat-card .stat-num  { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 900; color: var(--gold); }
+.stat-card .stat-label{ font-size: 0.78rem; color: var(--text-muted); margin-top: 0.25rem; }
+
+/* Enrolled list */
+.enrolled-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.enrolled-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 1.25rem;
+  align-items: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.enrolled-item:hover {
+  border-color: rgba(232, 169, 48, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.enrolled-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.enrolled-info h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; }
+.enrolled-info p  { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+
+.progress-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progress-details .progress-bar-wrap { flex: 1; margin: 0; }
+
+.progress-pct {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gold);
+  min-width: 36px;
+  text-align: right;
+}
+
+.enrolled-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+/* Status pills */
+.status-pill {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.pill-active { background: rgba(74,222,128,0.15);  color: var(--green); }
+.pill-paused { background: rgba(232,169,48,0.15);  color: var(--gold);  }
+.pill-done   { background: rgba(96,165,250,0.15);  color: var(--blue);  }
+
+/* Activity heatmap */
+.heatmap-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.heatmap-grid {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.heatmap-cell {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: var(--border);
+  transition: background 0.2s;
+}
+
+.heatmap-cell:hover { opacity: 0.8; cursor: pointer; }
+
+.heatmap-cell.h1 { background: rgba(232, 169, 48, 0.20); }
+.heatmap-cell.h2 { background: rgba(232, 169, 48, 0.45); }
+.heatmap-cell.h3 { background: rgba(232, 169, 48, 0.70); }
+.heatmap-cell.h4 { background: var(--gold); }
+
+.heatmap-legend {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.heatmap-legend-cells { display: flex; gap: 3px; }
+
+/* Certificates */
+.certs-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cert-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  transition: border-color 0.2s;
+}
+
+.cert-card:hover { border-color: rgba(232,169,48,0.3); }
+
+.cert-icon { font-size: 2rem; }
+.cert-info { flex: 1; }
+.cert-info h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.2rem; }
+.cert-info p  { font-size: 0.75rem; color: var(--text-muted); }
+
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
