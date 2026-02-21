@@ -38,3 +38,33 @@ It can run on XAMPP or any static host. There is no Node/Vite build process in t
 Languages and technologies used are HTML5, CSS3, and JavaScript.
 Functional coverage includes routing, rendering, filtering, search, playlist control, tab switching, notes/Q&A interactions, toast notifications, and responsive design.
 In short, SnippetSprout is a feature-rich frontend e-learning prototype with most UX workflows already implemented at UI-logic level, ready for future backend integration if needed.
+
+# OUTPUT
+
+<img width="1919" height="913" alt="Image" src="https://github.com/user-attachments/assets/ccefad2c-574e-4b36-8d9b-388ad09c18ff" />
+
+<img width="1919" height="920" alt="Image" src="https://github.com/user-attachments/assets/36aa0303-a8c6-4427-8010-3c2250492feb" />
+
+<img width="1919" height="917" alt="Image" src="https://github.com/user-attachments/assets/ef49a4d5-5e16-46bd-8733-ceefadb141d0" />
+
+<img width="1919" height="921" alt="Image" src="https://github.com/user-attachments/assets/68d625fe-df7f-470c-966b-a178bbaf6eae" />
+
+<img width="1919" height="918" alt="Image" src="https://github.com/user-attachments/assets/19f577fc-f794-4c0a-899c-12492a4965ae" />
+
+<img width="1919" height="920" alt="Image" src="https://github.com/user-attachments/assets/6309f0ee-2ae1-4705-9c83-2a1c8452a32d" />
+
+<img width="1919" height="915" alt="Image" src="https://github.com/user-attachments/assets/4a02dfe4-1926-4fb8-b7fd-e088d2ad7b7d" />
+
+<img width="1919" height="916" alt="Image" src="https://github.com/user-attachments/assets/19070b9d-f4b1-42f0-acf9-8cc5fdb6a8b3" />
+
+<img width="1919" height="915" alt="Image" src="https://github.com/user-attachments/assets/2f383086-aabc-4eac-834f-970ff571c0c7" />
+
+<img width="1919" height="919" alt="Image" src="https://github.com/user-attachments/assets/03be15de-b5f9-4d96-8115-2d699bf17a80" />
+
+<img width="1919" height="918" alt="Image" src="https://github.com/user-attachments/assets/3a7753eb-8b16-4d49-bed9-4ca0874c9cbb" />
+
+<img width="1919" height="917" alt="Image" src="https://github.com/user-attachments/assets/b43f01b7-a85c-471f-9c4e-8333c74427b7" />
+
+<img width="1919" height="914" alt="Image" src="https://github.com/user-attachments/assets/283587d7-5088-4c70-a171-c56a4aff6575" />
+
+<img width="1919" height="920" alt="Image" src="https://github.com/user-attachments/assets/893f85f1-cdda-44d8-b1a0-3211e0bd803b" />
