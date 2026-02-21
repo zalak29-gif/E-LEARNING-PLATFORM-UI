@@ -1,4 +1,4 @@
-﻿let currentFilter = 'all';
+let currentFilter = 'all';
 let currentSearch = '';
 
 function renderCourses() {
@@ -17,7 +17,7 @@ function renderCourses() {
   if (filtered.length === 0) {
     grid.innerHTML = `
       <div style="grid-column:1/-1; text-align:center; padding:4rem 2rem; color:var(--text-muted);">
-        <div style="font-size:3rem; margin-bottom:1rem;">ðŸ”</div>
+        <div style="font-size:3rem; margin-bottom:1rem;">Search</div>
         <h3 style="font-size:1.1rem; margin-bottom:0.5rem;">No courses found</h3>
         <p>Try a different search or filter.</p>
       </div>`;
@@ -38,10 +38,10 @@ function renderCourses() {
         <h3>${c.title}</h3>
         <p>${c.desc}</p>
         <div class="course-meta">
-          <span>â­ ${c.rating}</span>
-          <span>ðŸ“¹ ${c.lessons} lessons</span>
-          <span>â±ï¸ ${c.hours}</span>
-          <span>ðŸ“¶ ${c.level}</span>
+          <span>Rating: ${c.rating}/5</span>
+          <span>Lessons: ${c.lessons}</span>
+          <span>Duration: ${c.hours}</span>
+          <span>Level: ${c.level}</span>
         </div>
         <div class="course-footer">
           <div class="course-price">
@@ -69,5 +69,5 @@ function searchCourses(query) {
 
 function enrollCourse(e, title) {
   e.stopPropagation();
-  showToast('ðŸŽ‰ Enrolled in "' + title.split(':')[0].trim() + '"!');
+  showToast('Enrolled in "' + title.split(':')[0].trim() + '"!');
 }
