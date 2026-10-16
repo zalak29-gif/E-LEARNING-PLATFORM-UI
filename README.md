@@ -1,17 +1,5 @@
 # SNIPPETSPROUT -E-LEARNING-PLATFORM-UI
 
-*COMPANY*: CODTECH IT SOLUTIONS
-
-*NAME*: PARMAR ZALAK KANTILAL
-
-*INTERN ID*: CTIS4007
-
-*DOMAIN*: FRONT END DEVELOPMENT
-
-*DURATION*: 4 WEEKS
-
-*MENTOR*: NEELA SANTOSH
-
 # SnippetSprout is an e-learning platform interface prototype built as a multi-section single-page frontend application.
 It is implemented in HTML, CSS, and vanilla JavaScript, and from the current files it includes both a monolithic variant (elearning-platform.html + elearning-platform.js) and a cleaner modular architecture (index.html + *.js + *.css).
 The modular version is the more evolved structure and reflects stronger engineering organization.
